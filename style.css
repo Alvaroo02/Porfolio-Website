@@ -1,0 +1,144 @@
+/* Ajustes básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #ededed;
+}
+
+i {
+    color: #0e0e0e;
+    margin: 1em 1em;
+}
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    height: 4.5em;
+    background-color: #e7e76f;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.logo {
+    font-size: 2em;
+    font-family: monospace;
+    border-bottom: 1px solid black;
+}
+
+nav a {
+    margin: 0 .5em;
+    font-size: 1.2em;
+    color: black;
+}
+
+nav a:hover {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+/* Introducción */
+
+#introduccion {
+    padding: 6em 0.4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#introduccion h1{
+    margin: 1em 0;
+}
+
+#introduccion p {
+    font-size: 1.3em;
+    margin-bottom: 1em;
+}
+
+button {
+    padding: 1em 1.5em;
+    border: none;
+    background-color: #e7e76f;
+    border-radius: .3em;
+    cursor: pointer;
+}
+
+#cara {
+    display: none;
+    height: 16em;
+    width: 13em;
+}
+
+.img-proyecto {
+    height: 100%;
+    width: 100%;
+}
+
+/* Proyectos */
+
+#proyectos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 5em;
+}
+
+.img-proyecto:hover {
+    transform: scale(.95);
+    transition: 0.4s;
+}
+
+#habilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Contacto */
+
+#contacto {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #0e0e0e;
+    flex-direction: column;
+}
+
+#contacto a {
+    font-size: 2em;
+    color: white;
+}
+
+#contacto h2 {
+    color: white;
+    font-size: 2.2em;
+}
+
+footer {
+    background-color: #ededed;
+    height: 10vh;
+}
+
+footer p {
+    font-size: 1.1em;
+    padding-top: 1.5em;
+}
+
+@media only screen and (max-width: 500px) {
+    #proyectos {
+        grid-template-columns: 1fr;
+    }
+
+    .proyecto {
+        padding: 1em 0;
+    }
+}
