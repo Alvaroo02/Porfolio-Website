@@ -33,6 +33,11 @@ header {
     border-bottom: 1px solid black;
 }
 
+nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 nav a {
     margin: 0 .5em;
     font-size: 1.2em;
